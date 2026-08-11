@@ -1,11 +1,22 @@
-# HelloCash-Customer-PDF-Creator
-Small programm to speed up PDF file creaation for existing customers
+# HelloCash Customer PDF Creator
 
-the PDF in the templates can include forms for:
- -CustomerName
- -CustomerAddress
- -CustomerPLZCity
- -CustomerPhone
- -CustomerEmail
- -DateBox (fills form with current date-month-year)
-Filename will be customer firstname - customer lastname- Year-Month-Date with added minutes and seconds in case the filename already exists
+A small program to speed up PDF creation for existing customers.
+
+## Overview
+
+The PDF templates support the following form fields:
+
+- **CustomerName**
+- **CustomerAddress**
+- **CustomerPLZCity**
+- **CustomerPhone**
+- **CustomerEmail**
+- **DateBox** — automatically fills with the current date (day-month-year)
+
+## Output
+
+Generated files are named using the pattern:
+
+CustomerFirstName-CustomerLastName-Year-Month-Day
+
+If a file with that name already exists, minutes and seconds are appended to keep the filename unique.
